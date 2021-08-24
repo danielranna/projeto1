@@ -1,6 +1,48 @@
 from PySimpleGUI import PySimpleGUI as sg
 
 
+global nome_empresa
+global empreendimento
+global mes_inicio
+global duração
+global ano
+global iniciovendas
+global TMA
+global areaconstruida
+global valorobra
+global metragem
+global valorlote
+global imposto
+global corretagem
+global projetos
+global imagens
+global Venda
+global desc1
+global vdesc1
+global desc2
+global vdesc2
+global desc3
+global vdesc3
+global desc4
+global vdesc4
+global desc5
+global vdesc5
+global desc6
+global vdesc6
+global desc7
+global vdesc7
+global desc8
+global vdesc8
+global desc9
+global vdesc9
+global desc10
+global vdesc10
+global desc11
+global vdesc11
+global desc12
+global vdesc12
+global values
+
 
 def janela_1():
 
@@ -109,101 +151,14 @@ def janela_1():
             [[sg.Tab('Informações Gerais', tabinfgeral_layout), sg.Tab('Despesas Não Contabilizadas', desplayout)]])],
         [sg.Button('Prosseguir'), sg.Button('Sair')]
     ]
-    global nome_empresa
-    global empreendimento
-    global mes_inicio
-    global duração
-    global ano
-    global iniciovendas
-    global TMA
-    global areaconstruida
-    global valorobra
-    global metragem
-    global valorlote
-    global imposto
-    global corretagem
-    global projetos
-    global imagens
-    global Venda
-    global desc1
-    global vdesc1
-    global desc2
-    global vdesc2
-    global desc3
-    global vdesc3
-    global desc4
-    global vdesc4
-    global desc5
-    global vdesc5
-    global desc6
-    global vdesc6
-    global desc7
-    global vdesc7
-    global desc8
-    global vdesc8
-    global desc9
-    global vdesc9
-    global desc10
-    global vdesc10
-    global desc11
-    global vdesc11
-    global desc12
-    global vdesc12
+
+    values= sg.read_all_windows()
+
 
 
     return sg.Window('Estudo de Viabilidade', layout=layout, finalize=True)
 
 
-
-    nome_empresa = str(values['nome_empresa'])
-    empreendimento = str(values['empreendimento'])
-    mes_inicio = str(values['mes_inicio'])
-    duração = int(values['duração'])
-    ano = int(values['ano'])
-    iniciovendas = int(values['iniciovendas'])
-    TMA = float(values['TMA'])
-    areaconstruida = float(values['areaconstruida'])
-    valorobra = float(values['valorobra'])
-    metragem = float(values['metragem'])
-    valorlote = float(values['valorlote'])
-    imposto = float(values['imposto'])
-    corretagem = float(values['corretagem'])
-    projetos = float(values['projetos'])
-    imagens = float(values['imagens'])
-    Venda = float(values['Venda'])
-    desc1 = (values['desc1'])
-    vdesc1 = float(values['vdesc1'])
-    duração1 = str(values['duração1'])
-    desc2 = str(values['desc2'])
-    vdesc2 = float(values['vdesc2'])
-    duração2 = str(values['duração2'])
-    desc3 = str(values['desc3'])
-    vdesc3 = float(values['vdesc3'])
-    duração3 = str(values['duração3'])
-    desc4 = str(values['desc4'])
-    vdesc4 = float(values['vdesc4'])
-    duração4 = str(values['duração4'])
-    desc5 = str(values['desc5'])
-    vdesc5 = float(values['vdesc5'])
-    duração5 = str(values['duração5'])
-    desc6 = str(values['desc6'])
-    vdesc6 = float(values['vdesc6'])
-    duração6 = str(values['duração6'])
-    desc7 = str(values['desc7'])
-    vdesc7 = float(values['vdesc7'])
-    duração7 = str(values['duração7'])
-    desc8 = str(values['desc8'])
-    vdesc8 = float(values['vdesc8'])
-    duração8 = str(values['duração8'])
-    desc9 = str(values['desc9'])
-    vdesc9 = float(values['vdesc9'])
-    duração9 = str(values['duração9'])
-    desc10 = str(values['desc10'])
-    vdesc10 = float(values['vdesc10'])
-    duração10 = str(values['duração10'])
-    desc11 = str(values['desc11'])
-    vdesc11 = float(values['vdesc11'])
-    duração11 = str(values['duração11'])
 
 #values1 =[
  #   nome_empresa,empreendimento,mes_inicio,duração,ano,iniciovendas,TMA,areaconstruida,valorobra,metragem,valorlote,corretagem,projetos,imagens,Venda,desc1,vdesc1,desc2,vdesc2,desc3,vdesc3,desc4,vdesc4,desc5,vdesc5,desc6,vdesc6,desc7,vdesc7,desc8,vdesc8,desc9,vdesc9,desc10,vdesc10,desc11,vdesc11
@@ -248,9 +203,58 @@ while True:  # Event Loop
 
 
 
-
     if window == janela1 and event == 'Prosseguir':
 
+        nome_empresa = str(values['nome_empresa'])
+        empreendimento = str(values['empreendimento'])
+        mes_inicio = str(values['mes_inicio'])
+        duração = int(values['duração'])
+        ano = int(values['ano'])
+        iniciovendas = int(values['iniciovendas'])
+        TMA = float(values['TMA'])
+        areaconstruida = float(values['areaconstruida'])
+        valorobra = float(values['valorobra'])
+        metragem = float(values['metragem'])
+        valorlote = float(values['valorlote'])
+        imposto = float(values['imposto'])
+        corretagem = float(values['corretagem'])
+        projetos = float(values['projetos'])
+        imagens = float(values['imagens'])
+        Venda = float(values['Venda'])
+        desc1 = (values['desc1'])
+        vdesc1 = float(values['vdesc1'])
+        duração1 = str(values['duração1'])
+        desc2 = str(values['desc2'])
+        vdesc2 = float(values['vdesc2'])
+        duração2 = str(values['duração2'])
+        desc3 = str(values['desc3'])
+        vdesc3 = float(values['vdesc3'])
+        duração3 = str(values['duração3'])
+        desc4 = str(values['desc4'])
+        vdesc4 = float(values['vdesc4'])
+        duração4 = str(values['duração4'])
+        desc5 = str(values['desc5'])
+        vdesc5 = float(values['vdesc5'])
+        duração5 = str(values['duração5'])
+        desc6 = str(values['desc6'])
+        vdesc6 = float(values['vdesc6'])
+        duração6 = str(values['duração6'])
+        desc7 = str(values['desc7'])
+        vdesc7 = float(values['vdesc7'])
+        duração7 = str(values['duração7'])
+        desc8 = str(values['desc8'])
+        vdesc8 = float(values['vdesc8'])
+        duração8 = str(values['duração8'])
+        desc9 = str(values['desc9'])
+        vdesc9 = float(values['vdesc9'])
+        duração9 = str(values['duração9'])
+        desc10 = str(values['desc10'])
+        vdesc10 = float(values['vdesc10'])
+        duração10 = str(values['duração10'])
+        desc11 = str(values['desc11'])
+        vdesc11 = float(values['vdesc11'])
+        duração11 = str(values['duração11'])
+        print(values)
         janela2 = janela_2()
         janela1.Hide()
 
